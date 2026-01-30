@@ -1,0 +1,54 @@
+{
+  "name": "@turbokadi/react-tech-icons",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "author": "turbokadi",
+  "homepage": "https://github.com/turbokadi/react-tech-icons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/turbokadi/react-tech-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/turbokadi/react-tech-icons/issues"
+  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "icons:optimize": "node scripts/optimize-icons.mjs",
+    "icons:generate": "node scripts/generate-icons.mjs",
+    "dev": "vite --open dev.html",
+    "format": "prettier --write .",
+    "build": "npm run icons:optimize && npm run icons:generate && vite build && tsc",
+    "prepublishOnly": "pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^25.1.0",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "@vitejs/plugin-react": "^5.1.2",
+    "@vitest/coverage-v8": "^4.0.18",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "svgo": "^4.0.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18"
+  }
+}
