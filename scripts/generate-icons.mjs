@@ -3,7 +3,7 @@ import path from 'node:path'
 
 const SRC = '.optimized'
 const OUT = 'src/icons'
-const IDS_OUT = 'src/registry/manufacturer/ids.ts'
+const IDS_OUT = 'src/registry/manufacturer/manufacturer-ids.ts'
 
 const ALLOWED_SVG_STYLES = new Set([
   'fill',
