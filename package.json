@@ -1,6 +1,6 @@
 {
   "name": "@turbokadi/react-tech-icons",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "type": "module",
   "license": "MIT",
   "author": "turbokadi",
@@ -20,12 +20,12 @@
       "types": "./dist/index.d.ts"
     },
     "./icons/os/*": {
-      "import": "./dist/icons/os/*",
-      "types": "./dist/icons/os/*"
+      "import": "./dist/icons/os/*.js",
+      "types": "./dist/icons/os/*.d.ts"
     },
     "./icons/manufacturer/*": {
-      "import": "./dist/icons/manufacturer/*",
-      "types": "./dist/icons/manufacturer/*"
+      "import": "./dist/icons/manufacturer/*.js",
+      "types": "./dist/icons/manufacturer/*.d.ts"
     }
   },
   "files": [
