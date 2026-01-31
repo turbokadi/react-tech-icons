@@ -1,4 +1,3 @@
-// src/dev/icon-categories.ts
 import * as OsIcons from '../icons/os'
 import * as ManufacturerIcons from '../icons/manufacturer'
 

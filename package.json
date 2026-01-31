@@ -1,6 +1,6 @@
 {
   "name": "@turbokadi/react-tech-icons",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "type": "module",
   "license": "MIT",
   "author": "turbokadi",
@@ -12,9 +12,22 @@
   "bugs": {
     "url": "https://github.com/turbokadi/react-tech-icons/issues"
   },
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./icons/os/*": {
+      "import": "./dist/icons/os/*",
+      "types": "./dist/icons/os/*"
+    },
+    "./icons/manufacturer/*": {
+      "import": "./dist/icons/manufacturer/*",
+      "types": "./dist/icons/manufacturer/*"
+    }
+  },
   "files": [
     "dist"
   ],

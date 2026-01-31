@@ -10,13 +10,19 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
-      name: 'react-tech-icons',
-      formats: ['es', 'cjs'],
-      fileName: format => `index.${format}.js`,
+      entry: {
+        index: 'src/index.ts',
+        icons: 'src/icons/index.ts',
+      },
+      formats: ['es'],
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
+      output: {
+        preserveModules: true,
+        preserveModulesRoot: 'src',
+        entryFileNames: '[name].js',
+      },
     },
   },
 })
